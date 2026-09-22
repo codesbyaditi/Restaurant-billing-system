@@ -2,7 +2,7 @@
 A simple Restaurant Billing System built using Python. It allows users to view the menu, place orders, calculate the subtotal, add 5% GST, and generate the final bill.
 🍽️ Restaurant Billing System
 
-A simple Restaurant Billing System developed using Python. This project is designed for B.Tech 1st-year students to understand and practice basic Python programming concepts.
+A simple Restaurant Billing System developed using Python. 
 
 📌 Features
 
@@ -43,7 +43,7 @@ This project was created as a B.Tech 1st-year Python project to practice fundame
 
 👨‍💻 Author
 
-Your Name
+Aditi Shrivastav 
 
 ---
 
