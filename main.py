@@ -45,7 +45,7 @@ while True:
     else:
         print("Invalid item number!")
 
-# give 10 % discount if the bill is 500 or more
+#give 10 % discount if the bill is 500 or more
 if total >= 500:
     discount = total * 10 / 100
 else:
