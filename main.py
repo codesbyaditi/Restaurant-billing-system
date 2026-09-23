@@ -1,5 +1,5 @@
 # Restaurant Billing System
-
+# Menu of the restaurant 
 menu = {
     1: ["Burger", 120],
     2: ["Pizza", 250],
@@ -13,17 +13,21 @@ menu = {
 
 print("===== RESTAURANT BILLING SYSTEM =====")
 
+# taking customer name
 name = input("Enter customer name: ")
 
+# Display the menu
 print("\n--------- MENU ---------")
 for no, item in menu.items():
     print(no, item[0], "₹", item[1])
 
 total = 0
 
+# Take order
 while True:
     choice = int(input("\nEnter item number (0 to finish): "))
 
+# 0 means the order has finished
     if choice == 0:
         break
 
@@ -32,7 +36,8 @@ while True:
 
         item_name = menu[choice][0]
         price = menu[choice][1]
-
+  
+# calculate the total price of food items
         amount = price * qty
         total = total + amount
 
@@ -40,7 +45,7 @@ while True:
     else:
         print("Invalid item number!")
 
-# Discount
+# give 10 % discount if the bill is 500 or more
 if total >= 500:
     discount = total * 10 / 100
 else:
@@ -51,6 +56,7 @@ after_discount = total - discount
 gst = after_discount * 5 / 100
 final_bill = after_discount + gst
 
+# display the final bill
 print("\n========== BILL ==========")
 print("Customer Name:", name)
 print("Subtotal: ₹", total)
