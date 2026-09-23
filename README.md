@@ -57,7 +57,7 @@ Finally, the program displays the customer name and final bill.
 
 I made this project as a B.Tech 1st-year Python project to understand basic Python concepts and learn how programming can be used to make a simple real-life application.
 
-# 📚 What I had learned from this project 
+## 📚 What I had learned from this project 
 
 While making this project, I learned:
 
