@@ -1,0 +1,131 @@
+ESTAURANT BILLING SYSTEM
+
+1. Introduction
+
+The Restaurant Billing System is a simple Python-based project developed to make the billing process easier.
+
+The program allows the user to enter the customer's name, select food items from a menu, enter their quantities, and generate the final bill.
+
+The project also calculates a 10% discount when the subtotal is ₹500 or more and then adds 5% GST to the discounted amount.
+
+The main aim of this project is to use basic Python concepts to solve a simple problem that we might face in real life.
+
+2. Objectives
+
+The main objectives of this project are:
+
+- To create a simple restaurant billing system using Python.
+- To display a menu with food items and their prices.
+- To take the customer's name and order details.
+- To calculate the cost based on the quantity ordered.
+- To provide a 10% discount on bills of ₹500 or more.
+- To calculate 5% GST after applying the discount.
+- To display the final bill clearly.
+
+3. Technologies Used
+
+Programming Language: Python
+
+Concepts Used:
+
+- Dictionary
+- Lists
+- Variables
+- "for" loop
+- "while" loop
+- "if-else" statements
+- User input
+- Arithmetic operations
+
+The project can be run using Python 3 and any Python editor such as IDLE or VS Code.
+
+4. Working of the Project
+
+The program starts by displaying the restaurant billing system and asking for the customer's name.
+
+After that, the available food items and their prices are displayed.
+
+The customer can select an item by entering its item number and then enter the required quantity.
+
+The program calculates the price of each item selected by the customer and keeps adding it to the total.
+
+The customer can choose as many items as they want, and entering 0 means they are done with their order.
+
+After the order is completed:
+
+- If the subtotal is ₹500 or more, a 10% discount is applied.
+- A 5% GST is calculated on the amount after discount.
+- The final bill is calculated and displayed.
+
+The final bill shows the customer’s name along with the subtotal, discount, GST, and the total amount to be paid.
+
+5. Menu Used
+
+No.| Food Item| Price
+1| Burger - ₹120
+2| Pizza - ₹250
+3| Pasta - ₹180
+4| Sandwich - ₹100
+5| French Fries - ₹80
+6| Cold Drink - ₹50
+7| Coffee - ₹60
+8| Ice Cream - ₹90
+
+6. Billing Calculation
+
+The project uses the following calculations:
+
+Item Amount = Price × Quantity
+
+If the subtotal is ₹500 or more:
+
+Discount = 10% of Subtotal
+
+Then:
+
+GST = 5% of (Subtotal − Discount)
+
+Finally:
+
+Final Bill = Subtotal − Discount + GST
+
+7. Main Features
+
+- Customer name input
+- Predefined restaurant menu
+- Multiple item selection
+- Quantity-based billing
+- Invalid item checking
+- 10% discount for bills of ₹500 or more
+- 5% GST calculation
+- Final bill generation
+- Simple text-based interface
+
+8. Advantages
+
+- Simple and easy to use.
+- Makes bill calculation faster.
+- Reduces manual calculation.
+- Automatically calculates discount and GST.
+- Can be modified by adding more menu items.
+
+9. Limitations
+
+- It does not store bills permanently.
+- It does not use a database.
+- It does not include online payment.
+- It does not manage restaurant inventory.
+
+10. Future Scope
+
+The project can be improved in the future by adding a graphical user interface, database connectivity, digital payment options, receipt printing, customer history, and inventory management.
+
+These features can make the project more useful for an actual restaurant environment.
+
+11. Conclusion
+
+The Restaurant Billing System is a simple Python project that demonstrates how programming can be used to solve a basic real-life program.
+
+While making this project, I learned how to work with dictionaries, lists, loops, conditional statements, user input and basic calculations in Python.
+
+It also helped me understand how these concepts can be used together to make a simple and useful application.
