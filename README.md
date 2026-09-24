@@ -55,7 +55,7 @@ Finally, the program displays the customer name and final bill.
 
 🎓 Project Purpose
 
-I made this project as a B.Tech 1st-year Python project to understand basic Python concepts and learn how programming can be used to make a simple real-life application.
+I made this project to understand basic Python concepts and learn how programming can be used to make a simple real-life application.
 
 ### 📚 What I had learned from this project 
 
@@ -66,7 +66,7 @@ While making this project, I learned:
 - How to take input from the user
 - How to perform calculations in Python
 - How to create a simple billing program
-- How to handle invalid input
+
 
 👨‍💻 Author
 
