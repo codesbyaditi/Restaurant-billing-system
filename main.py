@@ -1,5 +1,5 @@
 # Restaurant Billing System
-# Menu of the restaurant 
+
 menu = {
     1: ["Burger", 120],
     2: ["Pizza", 250],
@@ -12,14 +12,12 @@ menu = {
 }
 
 print("===== RESTAURANT BILLING SYSTEM =====")
-
-# taking customer name
 name = input("Enter customer name: ")
 
-# Display the menu
-print("\n--------- MENU ---------")
-for no, item in menu.items():
-    print(no, item[0], "₹", item[1])
+# Show menu
+print("\n----- MENU -----")
+for n, item in menu.items():
+    print(n, item[0], "₹", item[1])
 
 total = 0
 
@@ -27,42 +25,27 @@ total = 0
 while True:
     choice = int(input("\nEnter item number (0 to finish): "))
 
-# 0 means the order has finished
     if choice == 0:
         break
 
     if choice in menu:
         qty = int(input("Enter quantity: "))
-
-        item_name = menu[choice][0]
-        price = menu[choice][1]
-  
-# calculate the total price of food items
-        amount = price * qty
-        total = total + amount
-
-        print(qty, item_name, "added.")
+        total += menu[choice][1] * qty
+        print(menu[choice][0], "added.")
     else:
-        print("Invalid item number!")
+        print("Invalid item!")
 
-#give 10% discount if the bill is 500 or more
-if total >= 500:
-    discount = total * 10 / 100
-else:
-    discount = 0
+# Calculate discount and GST
+discount = total * 10 / 100 if total >= 500 else 0
+gst = (total - discount) * 5 / 100
+final_bill = total - discount + gst
 
-# GST
-after_discount = total - discount
-gst = after_discount * 5 / 100
-final_bill = after_discount + gst
-
-# display the final bill
+# Print bill
 print("\n========== BILL ==========")
-print("Customer Name:", name)
+print("Customer:", name)
 print("Subtotal: ₹", total)
 print("Discount: ₹", discount)
-print("GST (5%): ₹", gst)
-print("--------------------------")
+print("GST: ₹", gst)
 print("Final Bill: ₹", final_bill)
 print("==========================")
 print("Thank you for visiting!")
