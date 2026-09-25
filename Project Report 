@@ -1,0 +1,236 @@
+              ﻿PROJECT REPORT          
+          RESTAURANT BILLING SYSTEM
+_______________________________________________
+
+
+  
+Submitted in partial fulfillment of Python Essentials
+
+
+
+
+
+
+
+
+Submitted by :    Aditi Shrivastav [26BAI10104]                          
+Project Title :     Restaurant billing system                             
+Language Used :    Python 3.x                          
+Submitted to :     Dr. Gunjan Ansari                            
+Subject :         Python Essentials                               
+
+
+	1. INTRODUCTION
+The Restaurant Billing System is a simple Python based program designed to make the billing process easier. It allows the user to view the menu, select food items, enter quantities and automatically calculate the bill.
+
+The program calculates the subtotal, discount, GST and final amount. This project was developed to understand how basic Python concepts can be used to solve a real life problem.
+
+
+2.  PROBLEM STATEMENT
+Calculating restaurant bills manually can take time and sometimes cause calculation mistakes, especially when a customer orders multiple items.
+
+The objective of this project is to design a simple system that allows the user to calculate his/her bill automatically upon selecting any item and specifying the quantity. The system must be able to calculate the discount as well as GST amount for the given items and display the total price. 
+
+
+3.  Functional requirements
+The system should be able to : 
+* Display the restaurant menu. 
+* Accept the customer’s name.
+* Allow the user to select food items.
+* Accept the quantity of each selected item.
+* Calculate the price of each item.
+* Calculate the subtotal.
+* Calculate the discount.
+* Calculate GST.
+* Calculate the final bill amount.
+* Display the complete bill to the user.
+
+
+4.  Non - functional requirements
+* Simple : The program should be easy to understand and operate.
+* User - friendly : Instructions should be clearly displayed.
+* Accurate - Bill calculations should be correct.
+* Fast - The bill should be generated quickly.
+* Reliable - The program should perform calculations consistently.
+* Maintainable - Menu items and prices should be easy to modify in the code.
+
+
+
+5. System Architecture
+┌──────────────────┐
+             │      USER        │
+             └────────┬─────────┘
+                      │
+                      ▼
+             ┌──────────────────┐
+             │   MENU DISPLAY   │
+             └────────┬─────────┘
+                      │
+                      ▼
+             ┌──────────────────┐
+             │  USER SELECTION  │
+             │  & QUANTITY      │
+             └────────┬─────────┘
+                      │
+                      ▼
+             ┌──────────────────┐
+             │ BILL CALCULATION │
+             │ Subtotal         │
+             │ Discount         │
+             │ GST              │
+             │ Final Amount     │
+             └────────┬─────────┘
+                      │
+                      ▼
+             ┌──────────────────┐
+             │   FINAL BILL     │
+             └──────────────────┘
+
+
+
+6.  Workflow Diagram
+
+
+START
+          │
+          ▼
+   Display Restaurant Menu
+          │
+          ▼
+    Enter Customer Name
+          │
+          ▼
+     Select Food Item
+          │
+          ▼
+      Enter Quantity
+          │
+          ▼
+    Calculate Item Cost
+          │
+          ▼
+   Add Cost to Subtotal
+          │
+          ▼
+   More Items Required?
+       /        \
+     Yes         No
+      │           │
+      └──────►    ▼
+          Calculate Discount
+                  │
+                  ▼
+              Calculate GST
+                  │
+                  ▼
+          Calculate Final Amount
+                  │
+                  ▼
+             Display Bill
+                  │
+                  ▼
+                 END
+
+
+7.  Design decisions and Rationale
+
+
+* Use of dictionary - a python dictionary was used to store menu items and their prices. This is because it is easy to connect an item number with its name and price.
+
+
+* Use of lists - lists are used to store details such as food names and prices because lists are simple and suitable for storing related values.
+
+
+* Console based interface - the project uses a command - line interface because it keeps the project simple and focuses on understanding python programming concepts.
+
+
+
+
+8. Implementation details
+The project is implemented using Python.
+The menu is stored in a dictionary : 
+menu = {
+    1: ["Burger", 120],
+    2: ["Pizza", 250],
+    3: ["Pasta", 180],
+    4: ["Sandwich", 100],
+    5: ["French Fries", 80],
+    6: ["Cold Drink", 50],
+    7: ["Coffee", 60],
+    8: ["Ice Cream", 90]
+}
+The program takes the customer’s name and displays the available menu.
+The user selects an item and enters its quantity. The program multiplies the item price by the quantity to calculate the item’s cost.
+The costs of all selected items are added to calculate the subtotal. Discount and GST are then calculated and the final amount is displayed.
+
+
+9. Testing approach
+
+
+Test Case
+	Input 
+	Expected result
+	1
+	Select one item
+	Correct item cost is calculated,
+	2
+	Select multiple items
+	All item costs are added
+	3
+	Quantity greater than 1
+	Price is multiplied correctly
+	4
+	Different quantities
+	Correct subtotal is generated
+	5
+	Apply discount
+	Discount is calculated correctly
+	6
+	Calculate GST
+	GST is calculated correctly    
+	7
+	Generate bill
+	Complete bill is displayed
+	   
+10. Challenges faced
+While developing the project, some difficulties were faced such as:
+* Understanding how to store menu items using dictionaries.
+* Taking and processing user input correctly.
+* Calculating the bill for different quantities.
+* Applying discount and GST correctly.
+* Making sure the final bill is displayed in a clear format.
+* Handling multiple food selections using loops.
+
+
+11. Learning and key takeaways
+This project helped me understand how basic python concepts can be used to create a practical program.
+
+
+I learned about : 
+* Dictionaries and lists
+* Variables and data types
+* Loops
+* Conditional statements
+* User input and output
+* Arithmetic calculations
+* Organising a python program
+* Testing a program with different inputs
+
+
+12. Future enhancements 
+The  project can be improved in the future by adding : 
+* A graphical user interface (GUI)
+* A database for storing customer and order details
+* Online payment options
+* Digital receipts
+* Login and admin features
+* More food items and categories
+* Order history
+* Automatic inventory management
+* Printing or saving bills as PDF
+
+
+13.  References 
+* Python programming concepts
+* Python tutorials
+* Class notes
